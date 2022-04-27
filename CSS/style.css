@@ -1,0 +1,77 @@
+::-webkit-scrollbar
+
+header{
+    size: sticky; 
+}
+
+p{
+    font-size: 30px;
+    margin: 5%;
+}
+
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+}
+
+.AboutMe{
+    width: 300px;
+    height: 600px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 100px;
+    margin-top: 10%;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+    margin-left: -16.5%;
+    margin-top: 10%;
+}
+
+h3{
+    font-size: 40px;
+    margin-top: -123%;
+    margin-left: 18%;
+}
+
+#reference{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 110%;
+    margin-left: -10%;
+    text-align: left;
+    width: 350px;
+}
+
+.menu{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+li{
+    font-size: 30px;
+    display: inline;
+    list-style-type: none;
+    margin: 5px;
+    padding: 15px;
+    position: center;
+}
+
+li a:hover{
+    background-color: #004a10;
+}
+  
+body {
+    background-image: url("/images/RubixWelcome.jpg");
+    background-position: bottom 50px, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 22px;
+    border-radius: 50px;
+   
+}
+
