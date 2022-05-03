@@ -11,7 +11,9 @@ let velocityX = 0;
 let velocityY = 0;
 let foodX = Math.floor(Math.random() * 20);
 let foodY = Math.floor(Math.random() * 20);
-let score = 0
+let score = 0;
+let big = false;
+
 
 
 function startGame() {
@@ -22,6 +24,7 @@ function startGame() {
     borders()
     eat()
     drawScore()
+    grow()
     setTimeout(startGame, 1000 / speed);
     
 }
@@ -63,7 +66,19 @@ function eat(){
         foodY = Math.floor(Math.random() * 20);
         score = score + 1;
         console.log('eat');
+        big = true;
     }
+}
+
+function grow(){
+    ctx.fillStyle = 'green';
+    ctx.fillRect((moveX*tileCount)-(score*28),(moveY*tileCount)-(score*28),28,28);
+    /*if (big == true){
+        ctx.fillStyle = 'green';
+        ctx.fillRect(moveX*tileCount,moveY*tileCount,28,28);
+        console.log('grow')
+        
+    }*/
 }
 
 
@@ -106,22 +121,6 @@ function keyDown(event){
         velocityX = + 1;
         console.log('right')
     }
-    /*if (event.keyCode == 87 & WsnaketileSize > 28) {
-        HsnaketileSize = WsnaketileSize;
-        WsnaketileSize = 28;
-    }
-    if (event.keyCode == 83 & WsnaketileSize > 28) {
-        HsnaketileSize = WsnaketileSize;
-        WsnaketileSize = 28;
-    }
-    if (event.keyCode == 65 & HsnaketileSize > 28) {
-        WsnaketileSize = HsnaketileSize;
-        HsnaketileSize = 28;
-    }
-    if (event.keyCode == 68 & HsnaketileSize > 28) {
-        WsnaketileSize = HsnaketileSize;
-        HsnaketileSize = 28;
-    }*/
 }
 
 
